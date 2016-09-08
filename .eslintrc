@@ -1,0 +1,62 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+
+  "plugins": [
+    "babel",
+    "react",
+    "jsx-a11y",
+    "flowtype"
+  ],
+
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "experimentalObjectRestSpread": true,
+    "forOf": true,
+    "generators": true,
+    "globalReturn": true,
+    "jsx": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "restParams": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true
+  },
+
+  "rules": {
+    "global-require": 0,
+    "no-underscore-dangle": 0,
+    "new-cap": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "flowtype/require-parameter-type": 1,
+    "flowtype/require-return-type": [1, "always", { "annotateUndefined": "never" }],
+    "flowtype/space-after-type-colon": [1, "always"],
+    "flowtype/space-before-type-colon": [1, "never"],
+    "flowtype/type-id-match": [1, "^([A-Z][a-z0-9]+)+Type$"]
+  },
+
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
